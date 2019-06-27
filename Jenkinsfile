@@ -50,7 +50,7 @@ pipeline {
     stage('PushToRepo') {
       steps {
         sh '''
-cd /var/lib/jenkins/workspace/hello-world-war_master@2
+cd /var/lib/jenkins/workspace/helloWwar_master@2
 rm -rf .m2
 # git branch -u origin/master
 # touch -a dist/a.tmp
