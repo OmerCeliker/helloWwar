@@ -1,5 +1,5 @@
 
-/*
+
 resource "aws_autoscaling_group" "instances_autoscaling_group" {
 name                      = "instances_autoscaling_group"
 max_size                  = 3
@@ -25,10 +25,10 @@ propagate_at_launch = true
 }
 
 }
-*/
 
 
 
+/*
 
 resource "aws_autoscaling_group" "instances_autoscaling_group104" {
 name                      = "instances_autoscaling_group104"
@@ -55,4 +55,7 @@ propagate_at_launch = true
 }
 
 }
+
+
+*/
 
