@@ -67,14 +67,12 @@ git push origin master
       steps {
         sh '''
 cd /var/lib/jenkins/workspace/helloWwar_master@2/terraformconfig
-
-initTerraform=false
-
-if [ "$initTerraform" = true ] ; then
-   terraform init
-fi
+terraform init
 terraform plan -out plan
 terraform apply -auto-approve "plan" 
+git add terraform/terraform.tfstate
+git commit -m "save the state file"
+git push origin master
 
 '''
       }
