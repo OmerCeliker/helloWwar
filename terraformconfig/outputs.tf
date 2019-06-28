@@ -56,14 +56,14 @@ output "loadbalancer_zone_id" {
 
 
 #load Balancer DNS
-output "loadbalancer_dns_name 104" {
+output "loadbalancer_dns_name_104" {
   description = "DNS name of the load balancer"
   value       = "${aws_elb.web104.dns_name}"
 }
 
 
 #load Balancer DNS
-output "loadbalancer_zone_id 104" {
+output "loadbalancer_zone_id_104" {
   description = "Zone ID of the load balancer"
   value       = "${aws_elb.web104.zone_id}"
 }
