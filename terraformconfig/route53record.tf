@@ -1,6 +1,7 @@
 
 
 resource "aws_route53_record" "record1" {
+  allow_overwrite = true
   zone_id = "${aws_route53_zone.dev.zone_id}"
   name    = "frontend.tf.dev.clouddatatesting.com"
   type    = "A"
@@ -21,8 +22,9 @@ resource "aws_route53_record" "record1" {
 
 
 
-
+/*
 resource "aws_route53_record" "record104" {
+  allow_overwrite = true
   zone_id = "${aws_route53_zone.dev.zone_id}"
   name    = "frontend.tf.dev.clouddatatesting.com"
   type    = "A"
@@ -36,7 +38,7 @@ resource "aws_route53_record" "record104" {
   
   
 }
-
+*/
 
 
 
