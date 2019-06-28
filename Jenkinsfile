@@ -69,7 +69,7 @@ git push origin master
 cd /var/lib/jenkins/workspace/helloWwar_master@2/terraformconfig
 terraform init
 terraform plan -out plan
-terraform apply "plan" -auto-approve
+terraform apply -auto-approve "plan" 
 
 '''
       }
