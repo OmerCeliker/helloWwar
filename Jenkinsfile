@@ -54,7 +54,7 @@ pipeline {
 cd /var/lib/jenkins/workspace/helloWwar_master@2
 rm -rf .m2
 git pull origin
-git add dist/hello-1.0.0.war
+git add dist/hello-1.0.4.war
 git config --global user.name "OmerCeliker"
 git config --global user.email omer.s.celiker@gmail.com
 git commit -m "released the war file"
@@ -68,7 +68,7 @@ git push origin master
         sh '''
 cd /var/lib/jenkins/workspace/helloWwar_master@2/terraformconfig
 
-initTerraform=true
+initTerraform=false
 
 if [ "$initTerraform" = true ] ; then
    terraform init

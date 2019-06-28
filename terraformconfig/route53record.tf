@@ -20,7 +20,7 @@ resource "aws_route53_record" "record1" {
 
 
 
-/*
+
 
 resource "aws_route53_record" "record1" {
   zone_id = "${aws_route53_zone.dev.zone_id}"
@@ -37,7 +37,7 @@ resource "aws_route53_record" "record1" {
   
 }
 
-*/
+
 
 
 /*
