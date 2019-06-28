@@ -65,7 +65,13 @@ git push origin master
     }
     stage('PublishService') {
       steps {
-        sh 'echo PublishService'
+        sh '''
+cd /var/lib/jenkins/workspace/helloWwar_master@2/terraformconfig
+terraform init
+terraform plan -out plan
+terraform apply -auto-approve "plan" 
+
+'''
       }
     }
   }
