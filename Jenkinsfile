@@ -70,7 +70,8 @@ cd /var/lib/jenkins/workspace/helloWwar_master@2/terraformconfig
 terraform init
 terraform plan -out plan
 terraform apply -auto-approve "plan" 
-git add terraform/terraform.tfstate
+#Save the state now that everything worked!
+git add terraform.tfstate
 git commit -m "save the state file"
 git push origin master
 
