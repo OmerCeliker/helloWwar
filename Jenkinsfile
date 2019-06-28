@@ -65,7 +65,7 @@ git push origin master
     }
     stage('PublishService') {
       steps {
-               sh '''
+        sh '''
 cd /var/lib/jenkins/workspace/helloWwar_master@2/terraformconfig
 terraform init
 terraform plan -out plan
