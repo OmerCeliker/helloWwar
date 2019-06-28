@@ -67,7 +67,12 @@ git push origin master
       steps {
         sh '''
 cd /var/lib/jenkins/workspace/helloWwar_master@2/terraformconfig
-terraform init
+
+initTerraform=true
+
+if [ "$initTerraform" = true ] ; then
+   terraform init
+fi
 terraform plan -out plan
 terraform apply -auto-approve "plan" 
 
