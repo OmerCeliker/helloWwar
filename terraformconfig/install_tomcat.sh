@@ -11,7 +11,6 @@ chmod -R g+r /opt/tomcat/conf
 chmod g+x /opt/tomcat/conf
 chown -R tomcat /opt/tomcat/webapps/ /opt/tomcat/work/ /opt/tomcat/temp/ /opt/tomcat/logs/
 
-
 cat > /tmp/tomcat.service <<EOL
 [Unit]
 Description=Apache Tomcat Web Application Container

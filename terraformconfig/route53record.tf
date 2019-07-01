@@ -1,26 +1,15 @@
-
-
 resource "aws_route53_record" "record1" {
   allow_overwrite = true
   zone_id = "${aws_route53_zone.dev.zone_id}"
   name    = "frontend.tf.dev.clouddatatesting.com"
   type    = "A"
   
-  
   alias {
     name                   = "${aws_elb.web.dns_name}"
     zone_id                = "${aws_elb.web.zone_id}"
     evaluate_target_health = "${var.evaluate_target_health}"
   }
-  
-  
 }
-
-
-
-
-
-
 
 resource "aws_route53_record" "record104" {
   allow_overwrite = true
@@ -35,12 +24,7 @@ resource "aws_route53_record" "record104" {
     evaluate_target_health = "${var.evaluate_target_health}"
   }
   
-  
 }
-
-
-
-
 
 /*
 Create NS record in the top parent domain 

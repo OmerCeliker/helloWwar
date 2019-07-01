@@ -1,5 +1,3 @@
-
-
 /*
 
 resource "aws_instance" "web" {
@@ -18,8 +16,6 @@ resource "aws_instance" "web" {
   # Our Security group to allow HTTP and SSH access
   vpc_security_group_ids = ["${aws_security_group.default.id}"]
   
-  
-  
   # Copies the source_file file to target_directory
   provisioner "file" {
     source      = "${var.source_file}"
@@ -32,9 +28,6 @@ resource "aws_instance" "web" {
   subnet_id = "${element(module.vpc.public_subnets,0)}"
 
   user_data = "${file("install_tomcat.sh")}"
-  
-  
-  
   
 connection {
 type = "ssh"
