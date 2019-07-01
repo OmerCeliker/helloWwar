@@ -53,7 +53,7 @@ output "loadbalancer_zone_id" {
 }
 
 
-/*
+
 
 #load Balancer DNS
 output "loadbalancer_dns_name_104" {
@@ -68,6 +68,6 @@ output "loadbalancer_zone_id_104" {
   value       = "${aws_elb.web104.zone_id}"
 }
 
-*/
+
 
 

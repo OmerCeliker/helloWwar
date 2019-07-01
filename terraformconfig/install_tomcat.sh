@@ -41,7 +41,7 @@ EOL
 
 sudo cp -v /tmp/tomcat.service /etc/systemd/system/tomcat.service 
 #Download our binary
-wget -O /tmp/hello.war https://github.com/OmerCeliker/helloWwar/blob/master/dist/hello-1.0.0.war?raw=true
+wget -O /tmp/hello.war https://github.com/OmerCeliker/helloWwar/blob/master/dist/hello-1.0.4.war?raw=true
 cp -v /tmp/hello.war /opt/tomcat/webapps 
 systemctl daemon-reload
 systemctl start tomcat
