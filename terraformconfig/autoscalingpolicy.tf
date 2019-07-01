@@ -9,6 +9,7 @@ autoscaling_group_name = "${aws_autoscaling_group.instances_autoscaling_group.na
 }
 
 
+/*
 
 resource "aws_autoscaling_policy" "instances_autoscaling_policy104" {
 name = "instances_autoscaling_policy"
@@ -18,5 +19,5 @@ cooldown = 300
 autoscaling_group_name = "${aws_autoscaling_group.instances_autoscaling_group104.name}"
 }
 
-
+*/
 
