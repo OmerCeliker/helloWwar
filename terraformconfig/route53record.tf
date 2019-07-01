@@ -21,7 +21,6 @@ resource "aws_route53_record" "record1" {
 
 
 
-/*
 
 resource "aws_route53_record" "record104" {
   allow_overwrite = true
@@ -39,7 +38,7 @@ resource "aws_route53_record" "record104" {
   
 }
 
-*/
+
 
 
 
