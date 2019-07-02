@@ -12,7 +12,7 @@ resource "aws_elb" "web" {
     lb_protocol       = "http"
   }
 }
-
+/*
 resource "aws_elb" "web104" {
   name = "terraform-example-elb104"
 
@@ -27,7 +27,7 @@ resource "aws_elb" "web104" {
     lb_protocol       = "http"
   }
 }
-
+*/
 
 
 
