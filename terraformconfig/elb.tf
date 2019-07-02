@@ -13,7 +13,7 @@ resource "aws_elb" "web" {
   }
 }
 
-/*
+
 
 resource "aws_elb" "web104" {
   name = "terraform-example-elb104"
@@ -30,7 +30,7 @@ resource "aws_elb" "web104" {
   }
 }
 
-*/
+
 
 
 
